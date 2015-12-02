@@ -10,8 +10,9 @@
 				$pass = md5($_POST["password"]);
 				$row = $db->get_row("SELECT * FROM users WHERE username='$user' AND password='$pass'");
 				if (count($row)>0){
-					echo '<div class="alert alert-success" style="margin-top:50px;"><strong>Başarılı!</strong> Hoşgeldiniz sayın <b>'.$row->username.'</b>! <a href="uyeler.php">Buraya tıklayarak diğer üyeleri görebilirsiniz.</a></div>';
+					// echo '<div class="alert alert-success" style="margin-top:50px;"><strong>Başarılı!</strong> Hoşgeldiniz sayın <b>'.$row->username.'</b>! <a href="uyeler.php">Buraya tıklayarak diğer üyeleri görebilirsiniz.</a></div>';
 					$_SESSION["login"] = $row->id;
+					header("Location: index.php");
 				} else {
 					echo '<div class="alert alert-danger" style="margin-top:50px;"><strong>Opps!</strong>Kullanıcı adı veya şifre hatalı. Lütfen tekrar deneyiniz.</div>';
 				}

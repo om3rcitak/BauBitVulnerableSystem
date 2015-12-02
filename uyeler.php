@@ -11,6 +11,8 @@
 			}			
 			?>
 			
+			<h3><a href="index.php"><< Anasayfa'ya Dön</a></h3>
+			
 			<div class="container" style="margin-top:50px;">
 				<div class="row">
 					<?php

@@ -13,8 +13,10 @@
 				
 				$db->query("INSERT INTO users VALUES (NULL, '$user', '$pass', '$resimadi')");
 				move_uploaded_file($resimkaynak, "resimler/".$resimadi);
+				
+				header("Location: index.php");
 
-				echo '<div class="alert alert-success" style="margin-top:50px;"><strong>Başarılı!</strong> Başarıyla kayıt oldunuz. <a href="girisyap.php">Giriş Yapmak İçin Buraya Tıklayın</a></div>';
+				// echo '<div class="alert alert-success" style="margin-top:50px;"><strong>Başarılı!</strong> Başarıyla kayıt oldunuz. <a href="girisyap.php">Giriş Yapmak İçin Buraya Tıklayın</a></div>';
 				
 			}
 			?>
