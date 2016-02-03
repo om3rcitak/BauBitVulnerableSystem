@@ -20,7 +20,7 @@
 					foreach($rows AS $row){
 					?>
 					<div class="col-lg-2 col-md-2 col-xs-2 thumb">
-						<a class="thumbnail">
+						<a href="uye.php?id=<?php echo $row->id; ?>" class="thumbnail">
 							<img class="img-responsive" src="resimler/<?php echo $row->image; ?>" alt="" style="height:150px;">
 							<?php echo $row->username; ?>
 						</a>
