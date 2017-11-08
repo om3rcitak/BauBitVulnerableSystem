@@ -14,7 +14,7 @@
 					$_SESSION["login"] = $row->id;
 					header("Location: index.php");
 				} else {
-					echo '<div class="alert alert-danger" style="margin-top:50px;"><strong>Opps!</strong>Kullanıcı adı veya şifre hatalı. Lütfen tekrar deneyiniz.</div>';
+					echo '<div class="alert alert-danger" style="margin-top:50px;"><strong>Opps!</strong>Kullanıcı adı veya parola hatalı. Lütfen tekrar deneyiniz.</div>';
 				}
 			}
 			?>
@@ -25,8 +25,8 @@
 					<input type="text" name="username" class="form-control" id="u" placeholder="Kullanıcı Adınızı Giriniz">
 				</div>
 				<div class="form-group">
-					<label for="pwd">Şifre:</label>
-					<input type="password" name="password" class="form-control" id="pwd" placeholder="Şifrenizi Giriniz">
+					<label for="pwd">Parola:</label>
+					<input type="password" name="password" class="form-control" id="pwd" placeholder="Parola Giriniz">
 				</div>
 				<button type="submit" class="btn btn-default">Giriş Yap</button>
 			</form>
