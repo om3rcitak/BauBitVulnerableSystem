@@ -27,8 +27,8 @@
 					<input type="text" name="username" class="form-control" id="u" placeholder="Kullanıcı Adınızı Giriniz">
 				</div>
 				<div class="form-group">
-					<label for="pwd">Şifre:</label>
-					<input type="password" name="password" class="form-control" id="pwd" placeholder="Şifrenizi Giriniz">
+					<label for="pwd">Parola:</label>
+					<input type="password" name="password" class="form-control" id="pwd" placeholder="Parola Giriniz">
 				</div>
 				<div class="form-group">
 					<label for="pwd">Profil Resmi:</label>
